@@ -1,4 +1,5 @@
 import { PluginListenerHandle } from '@capacitor/core';
+
 import { AppAction } from './app-action';
 
 export interface AddAppActionOptions {
@@ -15,4 +16,9 @@ export interface AppActionsPlugin {
    * Listen for when an app action has been clicked by the user. actionId should match existing app actions.
    */
   addListener(actionId: string, listener: (info: any) => void) : Promise<PluginListenerHandle> & PluginListenerHandle
+
+  /**
+   * Remove all listeners for this plugin.
+   */
+  removeAllListeners(): Promise<void>;
 }
