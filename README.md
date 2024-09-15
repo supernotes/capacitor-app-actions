@@ -27,11 +27,11 @@ npx cap sync
 
 ## Configuration
 
-Android:
+### Android
 
 No additional configuration required.
 
-iOS:
+### iOS
 
 Add the following to `AppDelegate.swift`. This snippet allows the plugin to recognize when an app action has been selected so that you can respond to those events.
 
@@ -48,20 +48,23 @@ func application(_ application: UIApplication,
 
 Typically app actions are added at application startup, but you can add them where appropriate:
 
-```
+```js
 import { AppActions } from 'capacitor-app-actions'
 
 await Capacitor.Plugins.AppActions.set({ "actions": [ 
-    { id: "order", title: "Order", subtitle: "Place an Order", icon: "star.fill" }, 
-    { id: "locations", title: "Find location", subtitle: "Find nearby location", icon: "star.fill"}
-  ]});
+  { id: "order", title: "Order", subtitle: "Place an Order", icon: "star.fill" }, 
+  { id: "locations", title: "Find location", subtitle: "Find nearby location", icon: "star.fill"}
+]});
 ```
 Listen to an event triggered by an existing app action:
 
-```
+```js
 AppActions.addListener("order", (info) => {
-    // Do your in app work. Navigate to the appropriate page or trigger other in app actions.
-  });
+  // Do your in app work. Navigate to the appropriate page or trigger other in app actions.
+});
+
+// clean up listeners when you are done
+AppActions.removeAllListeners()
 ```
 ## Contributors ✨
 
