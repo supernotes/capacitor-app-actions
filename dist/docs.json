@@ -7,7 +7,7 @@
     "methods": [
       {
         "name": "set",
-        "signature": "(options: AddAppActionOptions) => any",
+        "signature": "(options: AddAppActionOptions) => Promise<void>",
         "parameters": [
           {
             "name": "options",
@@ -15,46 +15,13 @@
             "type": "AddAppActionOptions"
           }
         ],
-        "returns": "any",
+        "returns": "Promise<void>",
         "tags": [],
         "docs": "Set app actions for the app. Overrides any existing app actions.",
         "complexTypes": [
           "AddAppActionOptions"
         ],
         "slug": "set"
-      },
-      {
-        "name": "addListener",
-        "signature": "(actionId: string, listener: (info: any) => void) => Promise<PluginListenerHandle> & PluginListenerHandle",
-        "parameters": [
-          {
-            "name": "actionId",
-            "docs": "",
-            "type": "string"
-          },
-          {
-            "name": "listener",
-            "docs": "",
-            "type": "(info: any) => void"
-          }
-        ],
-        "returns": "any",
-        "tags": [],
-        "docs": "Listen for when an app action has been clicked by the user. actionId should match existing app actions.",
-        "complexTypes": [
-          "PluginListenerHandle"
-        ],
-        "slug": "addlistener"
-      },
-      {
-        "name": "removeAllListeners",
-        "signature": "() => any",
-        "parameters": [],
-        "returns": "any",
-        "tags": [],
-        "docs": "Remove all listeners for this plugin.",
-        "complexTypes": [],
-        "slug": "removealllisteners"
       }
     ],
     "properties": []
@@ -112,22 +79,6 @@
           "docs": "iOS: icon name for the system icon e.g. \"star.fill\"\nAndroid: icon name for the system icon e.g. \"ic_menu_search\"",
           "complexTypes": [],
           "type": "string | undefined"
-        }
-      ]
-    },
-    {
-      "name": "PluginListenerHandle",
-      "slug": "pluginlistenerhandle",
-      "docs": "",
-      "tags": [],
-      "methods": [],
-      "properties": [
-        {
-          "name": "remove",
-          "tags": [],
-          "docs": "",
-          "complexTypes": [],
-          "type": "() => any"
         }
       ]
     }

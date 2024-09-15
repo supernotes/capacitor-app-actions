@@ -1,24 +1,26 @@
-import { PluginListenerHandle } from '@capacitor/core';
+import type { Plugin } from '@capacitor/core';
 
-import { AppAction } from './app-action';
-
-export interface AddAppActionOptions {
-  actions: AppAction[]
+export interface AppAction {
+  /**
+   * Unique identifier across all app actions.
+   */
+  id: string;
+  title: string;
+  subtitle?: string;
+  /**
+   * iOS: icon name for the system icon e.g. "star.fill"
+   * Android: icon name for the system icon e.g. "ic_menu_search"
+   */
+  icon?: string;
 }
 
-export interface AppActionsPlugin {
+export interface AddAppActionOptions {
+  actions: AppAction[];
+}
+
+export interface AppActionsPlugin extends Plugin {
   /**
    * Set app actions for the app. Overrides any existing app actions.
    */
-  set(options: AddAppActionOptions): Promise<void>
-
-  /**
-   * Listen for when an app action has been clicked by the user. actionId should match existing app actions.
-   */
-  addListener(actionId: string, listener: (info: any) => void) : Promise<PluginListenerHandle> & PluginListenerHandle
-
-  /**
-   * Remove all listeners for this plugin.
-   */
-  removeAllListeners(): Promise<void>;
+  set(options: AddAppActionOptions): Promise<void>;
 }
