@@ -14,7 +14,7 @@
   <a href="https://www.npmjs.com/package/capacitor-app-actions"><img src="https://img.shields.io/npm/dw/capacitor-app-actions?style=flat-square" /></a>
   <a href="https://www.npmjs.com/package/capacitor-app-actions"><img src="https://img.shields.io/npm/v/capacitor-app-actions?style=flat-square" /></a>
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-<a href="#contributors-"><img src="https://img.shields.io/badge/all%20contributors-1-orange?style=flat-square" /></a>
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 </p>
 
@@ -72,7 +72,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/uioporqwerty"><img src="https://avatars.githubusercontent.com/u/4053751?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Nitish Sachar</b></sub></a><br /><a href="#maintenance-uioporqwerty" title="Maintenance">🚧</a> <a href="https://github.com/uioporqwerty/capacitor-app-actions/commits?author=uioporqwerty" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/uioporqwerty"><img src="https://avatars.githubusercontent.com/u/4053751?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Nitish Sachar</b></sub></a><br /><a href="#maintenance-uioporqwerty" title="Maintenance">🚧</a> <a href="https://github.com/Nitish Sachar/app-actions/commits?author=uioporqwerty" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/acnebs"><img src="https://avatars.githubusercontent.com/u/9054108?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Connor</b></sub></a><br /><a href="#maintenance-acnebs" title="Maintenance">🚧</a></td>
+    <td align="center"><a href="https://github.com/tobeagram"><img src="https://avatars.githubusercontent.com/u/16340510?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Tobias</b></sub></a><br /><a href="#maintenance-tobeagram" title="Maintenance">🚧</a></td>
   </tr>
 </table>
 
