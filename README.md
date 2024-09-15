@@ -18,12 +18,6 @@
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 </p>
 
-## Maintainers
-
-| Maintainer | GitHub | Social |
-| -----------| -------| -------|
-| Nitish Sachar | [uioporqwerty](https://github.com/uioporqwerty) | [LinkedIn](https://linkedin.com/in/nitish-sachar) |
-
 ## Installation
 
 ```bash
