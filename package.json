@@ -1,7 +1,7 @@
 {
   "name": "@supernotes/capacitor-app-actions",
-  "version": "6.0.1",
-  "description": "iOS and Android Capacitor plugin for App Actions",
+  "version": "6.0.2",
+  "description": "Capacitor plugin for App Actions on iOS and Android",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
