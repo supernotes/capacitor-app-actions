@@ -21,9 +21,7 @@ var capacitorAppActions = (function (exports, core) {
 
     exports.AppActions = AppActions;
 
-    Object.defineProperty(exports, '__esModule', { value: true });
-
     return exports;
 
-}({}, capacitorExports));
+})({}, capacitorExports);
 //# sourceMappingURL=plugin.js.map
